@@ -1,0 +1,158 @@
+@import url("https//fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fcf0cc;
+}
+
+nav {
+  background-color: #a64253;
+  color: #fff;
+  padding: 20px;
+  justify-content: flex-end;
+  display: flex;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #af1a33;
+  background-position: center;
+  background-size: cover;
+  display: block;
+}
+
+header {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+header p {
+  font-size: 30px;
+  margin: 0;
+}
+
+footer {
+  background-color: #ad2b41;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+section h2 {
+  margin: 0;
+}
+section p {
+  margin-top: 0;
+}
+
+.projects-container {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 810px;
+  margin: 20px auto 0;
+}
+
+.project-tile {
+  text-decoration: none;
+  color: #000;
+  max-width: 600px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+.project-tile:hover {
+  transform: scale(1.05);
+}
+.project-tile img {
+  max-width: 70%;
+}
+
+.project-tile img:hover {
+  background-color: rgb(214, 214, 214);
+  opacity: 0.9;
+}
+.project-tile p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.bg-pinkish {
+  background-color: #a64253;
+  color: #fff;
+}
+.social-ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.social-ul a {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 25px;
+  margin: 0 10px;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+}
+
+@media (max-width: 440px) {
+  section {
+    padding: 20px;
+  }
+}
